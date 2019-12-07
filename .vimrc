@@ -67,6 +67,8 @@ nmap <C-m> :NERDTreeFind<CR>
 
 let g:solarized_termcolors=16
 syntax on
+
+set laststatus=2
 let g:airline#extensions#tabline#enabled = 1
 let g:airline_theme='badwolf'
 set scrolloff=9
