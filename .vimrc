@@ -33,10 +33,10 @@ filetype plugin indent on
 
 " airline symbols
 " set guifont="DroidSans\ Mono\ Nerd"
-let g:airline_left_sep = ''
-let g:airline_left_alt_sep = ''
-let g:airline_right_sep = ''
-let g:airline_right_alt_sep = ''
+" let g:airline_left_sep = ''
+" let g:airline_left_alt_sep = ''
+" let g:airline_right_sep = ''
+" let g:airline_right_alt_sep = ''
 set number
 set linebreak
 set showbreak=+++
@@ -70,7 +70,7 @@ syntax on
 
 set laststatus=2
 let g:airline#extensions#tabline#enabled = 1
-let g:airline_theme='badwolf'
+let g:airline_theme='molokai'
 set scrolloff=9
 set virtualedit=onemore
 augroup nerdtree_clear
