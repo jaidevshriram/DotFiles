@@ -12,7 +12,6 @@ Plugin 'Valloric/YouCompleteMe'
 Plugin 'Yggdroot/indentLine'
 Plugin 'rdnetto/YCM-Generator'
 Plugin 'romainl/vim-cool'
-Plugin 'tpope/vim-commentary'
 Plugin 'machakann/vim-highlightedyank'
 Plugin 'scrooloose/nerdtree'
 Plugin 'tpope/vim-endwise'
@@ -20,23 +19,18 @@ Plugin 'flazz/vim-colorschemes'
 Plugin 'jakedouglas/exuberant-ctags'
 Plugin 'honza/vim-snippets'
 Plugin 'Townk/vim-autoclose'
-Plugin 'tomtom/tcomment_vim'
-Plugin 'tobyS/vmustache'
-Plugin 'janko-m/vim-test'
-Plugin 'maksimr/vim-jsbeautify'
-Plugin 'vim-syntastic/syntastic'
 Plugin 'neomake/neomake'
 
-" Plugin 'jiangmiao/auto-pairs'
 call vundle#end()
 filetype plugin indent on
 
 " airline symbols
 " set guifont="DroidSans\ Mono\ Nerd"
-" let g:airline_left_sep = ''
-" let g:airline_left_alt_sep = ''
-" let g:airline_right_sep = ''
-" let g:airline_right_alt_sep = ''
+let g:airline_left_sep = ''
+let g:airline_left_alt_sep = ''
+let g:airline_right_sep = ''
+let g:airline_right_alt_sep = ''
+
 set number
 set linebreak
 set showbreak=+++
@@ -66,11 +60,12 @@ autocmd BufWinEnter * NERDTreeMirror
 nmap <C-m> :NERDTreeFind<CR>
 
 let g:solarized_termcolors=16
+let g:AutoClosePreserveDotReg = 0
 syntax on
 
 set laststatus=2
 let g:airline#extensions#tabline#enabled = 1
-let g:airline_theme='molokai'
+let g:airline_theme='badwolf'
 set scrolloff=9
 set virtualedit=onemore
 augroup nerdtree_clear
@@ -92,3 +87,10 @@ autocmd InsertLeave * set nocul
 
 
 autocmd BufEnter NERD_* setlocal rnu
+
+" Mapping for buffer switching
+
+map <C-Right> :bn<CR>
+map <C-Left> :bp<CR>
+
+map <C-s> :w<CR>
