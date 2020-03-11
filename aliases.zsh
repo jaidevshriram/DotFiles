@@ -6,3 +6,6 @@ alias gstd="git add .; git commit -m \"Minor Update, Standard Message\"; git pus
 alias desktop="cd ~/Desktop"
 
 alias rm="rm -i"
+
+source /opt/ros/melodic/setup.zsh
+export DISPLAY=:0
