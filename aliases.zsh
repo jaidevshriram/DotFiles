@@ -9,3 +9,4 @@ alias rm="rm -i"
 
 source /opt/ros/melodic/setup.zsh
 export DISPLAY=:0
+alias py3="python3"
