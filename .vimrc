@@ -82,3 +82,4 @@ autocmd BufEnter NERD_* setlocal rnu
 
 map <C-Right> :bn<CR>
 map <C-Left> :bp<CR>
+map <C-w> :bd<CR>
